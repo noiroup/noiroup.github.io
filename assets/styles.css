@@ -92,7 +92,7 @@
     font-weight: var(--bold-font);
   }
 
-  .burger-menu {
+  .menu {
     color: var(--primary-color);
     font-size: 2rem;
     border: 0;
@@ -345,7 +345,7 @@
     margin: 8px;
    }
 
-   .burger-menu {
+   .menu {
     display: block;
    }
 
