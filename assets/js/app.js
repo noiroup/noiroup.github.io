@@ -10,11 +10,11 @@ scrollUp.addEventListener("click", () => {
 });
 
 
-const menu = document.querySelector("#menu");
+const menue = document.querySelector("#menu");
 const ul = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
 
-menu.addEventListener("click", () => {
+menue.addEventListener("click", () => {
   ul.classList.toggle("show");
 });
 
