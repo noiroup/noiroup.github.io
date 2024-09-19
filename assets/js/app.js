@@ -1,6 +1,6 @@
 const menue = document.querySelector(".menu");
-const links = document.querySelector(".links");
+const ul = document.querySelector(".links");
 
 menue.addEventListener("click", function() {
-   links.classList.toggle("show-links"); 
+   ul.classList.toggle("nav ul"); 
 })
