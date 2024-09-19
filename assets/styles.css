@@ -92,7 +92,7 @@
     font-weight: var(--bold-font);
   }
 
-  .menu {
+  .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
     border: 0;
