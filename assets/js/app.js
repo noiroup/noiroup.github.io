@@ -14,7 +14,7 @@ const menue = document.querySelector("#menu");
 const ul = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
 
-menue.addEventListener("click", () => {
+menue.addEventListener("click", function () => {
   ul.classList.toggle("show");
 });
 
