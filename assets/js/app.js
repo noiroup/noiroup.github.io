@@ -21,7 +21,7 @@ menue.addEventListener("click", function () => {
 const navLink = document.querySelectorAll(".nav-link");
 
 navLink.forEach((link) =>
-  link.addEventListener("click", () => {
+  link.addEventListener("click",  function () => {
     ul.classList.remove("show");
   })
 );
