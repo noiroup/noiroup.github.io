@@ -111,6 +111,7 @@
   }
 
   .hero img {
+    margin-top: 2rem;
     height: 37.5rem;
     width: 37.5rem;
   }
@@ -360,6 +361,7 @@
    }
 
    .hero img {
+        margin-top: 5rem;
         height: 37.5rem;
         width: 30rem;
     }
