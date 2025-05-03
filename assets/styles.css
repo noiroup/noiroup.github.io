@@ -34,11 +34,12 @@
  }
 
 /* CSS Resets */
- * {
+ /* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
- }
+  
+  
+ } */
 
  ul {
   list-style-type: none;
@@ -55,6 +56,9 @@
 
  body {
   font-family: var(--font-family);
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F011%2F127%2F621%2Flarge_2x%2Fbeautiful-sea-waves-and-white-sand-beach-in-the-tropical-island-soft-waves-of-blue-ocean-on-sandy-beach-background-from-top-view-from-drones-concept-of-relaxation-and-travel-on-vacation-free-photo.jpg&f=1&nofb=1&ipt=81578c9983a93baf43a1cebffae8db60a5b335b2bade8c66bf5b3fe33f43b479");
+  background-repeat: no-repeat;
+  background-size:cover;
  }
 
  nav {
@@ -66,8 +70,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-color: rgba(195, 220, 243, 0.7);
+    backdrop-filter: blur(5px);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+    width: 70rem;
+    margin: auto;
   }
   
   nav h1 {
@@ -99,6 +107,7 @@
     background-color: transparent;
     cursor: pointer;
     display: none;
+    
   }
 
   .hero {
@@ -107,40 +116,50 @@
     justify-content: center;
     gap: 2.5rem;
     max-width: 68.75rem;
+    max-height: 40 rem ;
+    height:40 rem;
     margin: auto;
   }
 
-  .hero img {
+  .hero-img {
     margin-top: 2rem;
     height: 25.5rem;
     width: 40.5rem;
-    border-radius: 20%;
+    border-radius: 10%;
   }
   
   .bio {
     width: 25rem;
     padding: 0.625rem;
-    border-radius: 6px;
+    border-radius: 4%;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    margin:10rem;
+    background-color: rgba(195, 220, 243, 0.7);
+    backdrop-filter: blur(5px)
   }
   
   .bio h1 {
     margin-bottom: var(--bottom-margin);
   }
   
-  .bio p {
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
-  }
+  
 
   .more-about {
-    background-color: var(--bg-color);
-    padding: 1rem 6rem;
+    background-color: rgba(173, 207, 240, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 10rem 6rem;
+    max-width: 50.75rem;
+    text-align: center;
+    margin: 10rem;
+    border-radius: 10%;
+
   }
   
   .more-about h2 {
     margin-bottom: var(--bottom-margin);
     text-align: center;
+    
+
   }
   
   .more-about p {
@@ -149,7 +168,7 @@
   }
 
   .skills {
-    max-width: 68.75rem;
+    max-width: 50.75rem;
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
@@ -170,7 +189,7 @@
 
   
   .icon-card {
-    background-color: #fff;
+    background-color: #cbdee6;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 20px;
@@ -178,31 +197,38 @@
   }
 
   .projects {
-    background-color: var(--bg-color);
+    
     padding: 32px 0;
     margin-top: 2rem;
+    
+    
   }
   
   .project-pic {
     width: 65%;
     height: 60%;
+    
   }
   
   .projects-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    
   }
   
   .projects-title {
     text-align: center;
     margin-bottom: 1rem;
+    
   }
   
   .project-container {
     text-align: center;
     width: 21.875rem;
     padding: 1rem;
+    background-color: #cbdee6;
   }
   
   .project-container p {
@@ -218,7 +244,7 @@
   }
   
   .project-card {
-    background-color: #fff;
+   
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
@@ -235,59 +261,7 @@
     margin-bottom: var(--bottom-margin-2);
   }
   
-  .contact-form-container {
-    max-width: 40.75rem;
-    margin: 0 auto;
-    padding: 0.938rem;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
-  }
   
-  .contact-form-container label {
-    line-height: 2.7em;
-    font-weight: var(--bold-font);
-    color: var(--primary-color);
-  }
-  
-  .contact-form-container textarea {
-    min-height: 6.25rem;
-    font-size: 14px;
-  }
-  
-  .contact-form-container .input-field {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-    border: 2px outset var(--primary-color);
-    font-size: 0.875rem;
-    outline: none;
-  }
-
-  .input-field::placeholder {
-    padding: 0.5rem;
-    color: var(--primary-color);
-  }
-  
-  
-  .submit-btn {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #fff;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: var(--bold-font);
-    transition: var(--transition);
-  }
-  
-  .submit-btn:hover {
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    cursor: pointer;
-  }
   
   .socials {
     display: flex;
@@ -317,7 +291,7 @@
   }
 
   footer {
-    background-color: var(--bg-color);
+   
     padding: 1.25rem;
     text-align:center;
     margin: 2rem 0 0;
@@ -361,7 +335,7 @@
     gap: 0;
    }
 
-   .hero img {
+   .hero-img {
         margin-top: 5rem;
         height: 37.5rem;
         width: 30rem;
@@ -374,7 +348,7 @@
 
 
    .more-about {
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 1rem 3.5rem;
    }
 
@@ -382,9 +356,7 @@
     text-align: center;
    }
 
-   .more-about p {
-    text-align: justify;
-   }
+   
   
 
    .icon {
